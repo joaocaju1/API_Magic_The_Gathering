@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scryfall API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Scryfall API</h1>
+            <input type="text" id="searchTerm" placeholder="Digite o termo de busca">
+            <button onclick="searchCard()">Buscar</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="cardResults" class="card-columns"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div id="modalCardDetails"></div>
+            <img id="modalCardImage" src="" alt="Card Image">
+            <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
